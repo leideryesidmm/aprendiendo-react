@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "workspaces": [
+    "projects/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leideryesidmm/aprendiendo-react.git"
@@ -16,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/leideryesidmm/aprendiendo-react/issues"
   },
-  "homepage": "https://github.com/leideryesidmm/aprendiendo-react#readme"
+  "homepage": "https://github.com/leideryesidmm/aprendiendo-react#readme",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
 }
